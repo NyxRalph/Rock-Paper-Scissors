@@ -7,20 +7,25 @@ function userChoiceRock() {
     const result = Math.floor(Math.random() * (4 - 1) + 1);
     console.log(result);
 
-   if(result == 1 && rockId){
-    console.log('its a tie')
-   }
-   if(result == 2 && rockId){
-    console.log('you lose')
-   }
-   if(result == 3 && rockId){
-    console.log('you win')
-   }
+    if (result == 1 && rockId) {
+        document.querySelector("#sect__two").style.visibility = "hidden";
+        document.querySelector(".game__play_5").style.visibility = "visible";
+      console.log("its a tie");
+    }
+    if (result == 2 && rockId) {
+        document.querySelector("#sect__two").style.visibility = "hidden";
+        document.querySelector(".game__play_4").style.visibility = "visible";
+      console.log("you lose");
+    }
+    if (result == 3 && rockId) {
+        document.querySelector("#sect__two").style.visibility = "hidden";
+        document.querySelector(".game__play_3").style.visibility = "visible";
+      console.log("you win");
+    }
 
     return result;
   }
   randomNum();
-  
 }
 
 function userChoicePaper() {
@@ -32,17 +37,21 @@ function userChoicePaper() {
     const result = Math.floor(Math.random() * (4 - 1) + 1);
     console.log(result);
 
-
-    if(result == 1 && paperId){
-        console.log('you win')
-       }
-       if(result == 2 && paperId){
-        console.log('its a tie')
-       }
-       if(result == 3 && paperId){
-        console.log('you lose')
-       }
-
+    if (result == 1 && paperId) {
+        document.querySelector("#sect__two").style.visibility = "hidden";
+        document.querySelector(".game__play").style.visibility = "visible";
+      console.log("you win");
+    }
+    if (result == 2 && paperId) {
+        document.querySelector("#sect__two").style.visibility = "hidden";
+        document.querySelector(".game__play_2").style.visibility = "visible";
+      console.log("its a tie");
+    }
+    if (result == 3 && paperId) {
+        document.querySelector("#sect__two").style.visibility = "hidden";
+        document.querySelector(".game__play_1").style.visibility = "visible";
+      console.log("you lose");
+    }
 
     return result;
   }
@@ -59,20 +68,50 @@ function userChoiceScissors() {
     const result = Math.floor(Math.random() * (4 - 1) + 1);
     console.log(result);
 
+    if (result == 1 && scissorsId) {
+      const scLOSE = "you lose";
+      document.querySelector("#sect__two").style.visibility = "hidden";
+      document.querySelector(".game__play_8").style.visibility = "visible";
+      console.log(scLOSE);
+      return scLOSE;
+    }
+    if (result == 2 && scissorsId) {
+      const scWin = "you win";
+      document.querySelector("#sect__two").style.visibility = "hidden";
+      document.querySelector(".game__play_7").style.visibility = "visible";
+      console.log(scWin);
+      return scWin;
+    }
+    if (result == 3 && scissorsId) {
+        document.querySelector("#sect__two").style.visibility = "hidden";
+        document.querySelector(".game__play_9").style.visibility = "visible";
+      console.log("its a tie");
+    }
 
-    if(result == 1 && scissorsId){
-        console.log('you lose')
-       }
-       if(result == 2 && scissorsId){
-        console.log('you win')
-       }
-       if(result == 3 && scissorsId){
-        console.log('its a tie')
-       }
+    
 
     return result;
   }
   randomNum();
+
+  function ytyty() {
+    document.querySelector("#sect__two").style.visibility = "hidden";
+    if (scLOSE) {
+      document.querySelector(".game__play_8").style.visibility = "visible";
+    }
+    if (scWin) {
+      document.querySelector(".game__play_7").style.visibility = "visible";
+    }
+    if (scTie)
+      document.querySelector(".game__play_9").style.visibility = "visible";
+  }
+}
+
+function playAgain() {
+  const playAgainBtn = document.querySelectorAll(".playing");
+  playAgainBtn.style.visibility = "hidden";
+  const startOver = document.querySelector("#sect__two");
+  startOver.style.visibility = "visible";
 }
 
 

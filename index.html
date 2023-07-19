@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <div class="game__play">
+    <div class="game__play playing">
       <div class="game__play--para">
         <h1 class="player__text">YOU PICKED</h1>
         <h1 class="house__text">THE HOUSE PICKED</h1>
@@ -75,6 +75,179 @@
       <div class="play__again">
         <h1 class="win_or_lose">YOU WIN</h1>
         <button class="play__again__btn">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div class="game__play_1 playing">
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--1 tile " name="paper" >
+          <img src="./images/icon-paper.svg" class="paper__img" alt="">
+        </button>
+        <button id="rock1" class="games__tile--3 tile little" name="scissors" >
+          <img src="./images/icon-scissors.svg" class="paper__img" alt="">
+        </button>
+      </div>
+      <div class="play__again">
+        <h1 class="win_or_lose">YOU LOSE</h1>
+        <button class="play__again__btn" onclick=" playAgain()">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div class="game__play_2 playing" >
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--1 tile " name="paper" >
+          <img src="./images/icon-paper.svg" class="paper__img" alt="">
+        </button>
+        <button id="paper2" class="games__tile--1 tile tie__ani" name="paper" >
+          <img src="./images/icon-paper.svg" class="paper__img" alt="">
+        </button>
+       
+      </div>
+      <div class="play__again">
+        <h1 class="win_or_lose">ITS A TIE</h1>
+        <button class="play__again__btn"  onclick=" playAgain()">PLAY AGAIN</button>
+      </div>
+    </div>
+
+    <div class="game__play_3 playing">
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--2 tile left" name="rock" >
+          <img src="./images/icon-rock.svg" class="rock__img" alt="">
+        </button>
+        <button id="rock1" class="games__tile--3 tile little" name="scissors" >
+          <img src="./images/icon-scissors.svg" class="paper__img" alt="">
+        </button>
+      </div>
+      <div class="play__again">
+        <h1 class="win_or_lose">YOU WIN</h1>
+        <button class="play__again__btn"  onclick=" playAgain()">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div class="game__play_4 playing">
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--2 tile left" name="rock" >
+          <img src="./images/icon-rock.svg" class="rock__img" alt="">
+        </button>
+        <button id="rock1" class="games__tile--1 tile little" name="scissors" >
+          <img src="./images/icon-paper.svg" class="paper__img" alt="">
+        </button>
+      </div>
+      <div class="play__again">
+        <h1 class="win_or_lose">YOU LOSE</h1>
+        <button class="play__again__btn"  onclick=" playAgain()">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div class="game__play_5 playing">
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--2 tile left" name="rock" >
+          <img src="./images/icon-rock.svg" class="rock__img" alt="">
+        </button>
+        <button id="rock1" class="games__tile--2 tile little" name="scissors" >
+          <img src="./images/icon-rock.svg" class="paper__img" alt="">
+        </button>
+      </div>
+      <div class="play__again">
+        <h1 class="win_or_lose">ITS A TIE</h1>
+        <button class="play__again__btn"  onclick=" playAgain()">PLAY AGAIN</button>
+      </div>
+    </div>
+    <!-- <div class="game__play_6 playing">
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--2 tile left" name="rock" >
+          <img src="./images/icon-rock.svg" class="rock__img" alt="">
+        </button>
+        <button id="rock1" class="games__tile--2 tile little" name="scissors" >
+          <img src="./images/icon-rock.svg" class="paper__img" alt="">
+        </button>
+      </div>
+      <div class="play__again pl">
+        <h1 class="win_or_lose">ITS A TIE</h1>
+        <button class="play__again__btn">PLAY AGAIN</button>
+      </div> -->
+    </div>
+    <div class="game__play_7 playing">
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--3 little tile left" name="rock" >
+          <img src="./images/icon-scissors.svg" class="rock__img" alt="">
+        </button>
+        <button id="rock1" class="games__tile--1 tile little" name="scissors" >
+          <img src="./images/icon-paper.svg" class="paper__img" alt="">
+        </button>
+      </div>
+      <div class="play__again">
+        <h1 class="win_or_lose">YOU WIN</h1>
+        <button class="play__again__btn"  onclick=" playAgain()">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div class="game__play_8 playing">
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--3 little tile left" name="rock" >
+          <img src="./images/icon-scissors.svg" class="rock__img" alt="">
+        </button>
+        <button id="rock1" class="games__tile--2 tile little" name="scissors" >
+          <img src="./images/icon-rock.svg" class="paper__img" alt="">
+        </button>
+      </div>
+      <div class="play__again">
+        <h1 class="win_or_lose">YOU LOSE</h1>
+        <button class="play__again__btn"  onclick=" playAgain()">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div class="game__play_9 playing">
+      <div class="game__play--para">
+        <h1 class="player__text">YOU PICKED</h1>
+        <h1 class="house__text">THE HOUSE PICKED</h1>
+      </div>
+      <div class="game__play--result">
+
+        <button id="paper1" class="games__tile--3 little tile left" name="rock" >
+          <img src="./images/icon-scissors.svg" class="rock__img" alt="">
+        </button>
+        <button id="rock1" class="games__tile--3 tile little" name="scissors" >
+          <img src="./images/icon-scissors.svg" class="paper__img" alt="">
+        </button>
+      </div>
+      <div class="play__again">
+        <h1 class="win_or_lose">ITS A TIE</h1>
+        <button class="play__again__btn"  onclick=" playAgain()">PLAY AGAIN</button>
       </div>
     </div>
 
