@@ -70,13 +70,16 @@ GAME BOARD
 
 #sect__two{
     padding: 10px 0px;
+    max-width: 1450px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* visibility: hidden; */
+    visibility: visible;
+   
 }
 .game__board{
+    max-width: 1450px;
     width: 100%;
     
     display: flex;
@@ -84,6 +87,24 @@ GAME BOARD
     justify-content: center;
     flex-direction: column;
   
+}
+#playing{
+    max-width: 1450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.playing__2{
+    max-width: 1450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
 }
 #tri__img{
     display: flex;
@@ -384,7 +405,7 @@ GAME PLAY
     font-weight: 500;
 }
 .play__again{
-   
+
     max-width: 300px;
     width: 100%;
     height: 180px;
@@ -402,7 +423,9 @@ GAME PLAY
     animation-delay: 0.5s;
    
 }
+
 .play__again__btn{
+    visibility: hidden;
     max-width: 230px;
     width: 100%;
     margin-top: 20px;
@@ -413,14 +436,31 @@ GAME PLAY
     font-size: 16px;
     cursor: pointer;
     color: #252243;
+    transition: all 300ms ease;
+    position: absolute;
+    top: 425px;
+    z-index: 2;
+
 }
-.play__again__btn{}
+.play__again__btn:hover{
+    scale: 1.1;
+    transition: all 300ms ease;
+}
+.play__again__btn:active{
+    scale: 0.9;
+    transition: all 300ms ease;
+}
+ul{
+    list-style:none;
+}
 
 .little{
     position: relative;
     top: 7px;
 }
-
+.disappear{
+    visibility: hidden;
+}
 @keyframes slide {
     0%{
         transform: translateX(200%)  
