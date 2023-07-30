@@ -108,6 +108,7 @@ GAME BOARD
 }
 #tri__img{
     display: flex;
+    z-index: -5;
 }
 #rock{
     width:170px;
@@ -179,6 +180,17 @@ GAME BOARD
     position: relative;
     top: 70px;
 }
+.paper__im,
+.rock__im,
+.scissors__im {
+    pointer-events: none;
+}
+.paper__img,
+.rock__img,
+.scissors__img {
+    pointer-events: none;
+    width: 55%;
+}
 
 /* 
 
@@ -203,6 +215,7 @@ li{
     display: flex;
     flex-direction: row;
 }
+
 
 /*  
 
@@ -236,9 +249,7 @@ GAME PLAY
 #paper1:active{
     scale: 0.9;
 }
-.paper__img{
-    width: 55%;
-}
+
 #rock1{
     width:250px;
     height:250px;
@@ -256,9 +267,6 @@ GAME PLAY
 }
 #rock1:active{
     scale: 0.9;
-}
-.rock__img{
-    width: 55%;
 }
 .game__play{
     
