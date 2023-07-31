@@ -1,5 +1,5 @@
-let score = 0;
-document.querySelector(".score").innerHTML = score;
+let score = 0
+
 
 const rock = document.querySelector("#rock");
 const paper = document.querySelector("#paper");
@@ -33,74 +33,90 @@ function random(event) {
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play_5").style.visibility = "visible";
-          return (result = "its a tie");
         }, 500);
-      } else if (text == "paper") {
+      }
+      if (text == "paper") {
         document.querySelector("#sect__two").style.visibility = "hidden";
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play").style.visibility = "visible";
-          score = score + 1;
         }, 500);
-      } else if (text == "scissors") {
+        score = score + 1;
+      }
+      if (text == "scissors") {
         document.querySelector("#sect__two").style.visibility = "hidden";
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play_8").style.visibility = "visible";
-          score = score - 1;
         }, 500);
+        score = score - 1;
       }
-    } else if (num == 2) {
+    }
+    if (num == 2) {
       if (text == "rock") {
         document.querySelector("#sect__two").style.visibility = "hidden";
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play_4").style.visibility = "visible";
-          score = score - 1;
         }, 500);
-      } else if (text == "paper") {
+        score = score - 1;
+      }
+      if (text == "paper") {
         document.querySelector("#sect__two").style.visibility = "hidden";
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play_2").style.visibility = "visible";
-          return (result = "its a tie");
         }, 500);
-      } else if (text == "scissors") {
+      }
+      if (text == "scissors") {
         document.querySelector("#sect__two").style.visibility = "hidden";
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play_7").style.visibility = "visible";
-          score = score + 1;
         }, 500);
+        score = score + 1;
       }
-    } else if (num == 3) {
+    }
+    if (num == 3) {
       if (text == "rock") {
         document.querySelector("#sect__two").style.visibility = "hidden";
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play_3").style.visibility = "visible";
-          score = score + 1;
         }, 500);
-      } else if (text == "paper") {
+        score = score + 1;
+      }
+      if (text == "paper") {
         document.querySelector("#sect__two").style.visibility = "hidden";
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play_1").style.visibility = "visible";
-          score = score - 1;
         }, 500);
-      } else if (text == "scissors") {
+        score = score - 1;
+      }
+      if (text == "scissors") {
         document.querySelector("#sect__two").style.visibility = "hidden";
         setTimeout(() => {
           document.querySelector(".playing__2").style.display = "flex";
           document.querySelector(".game__play_9").style.visibility = "visible";
-          return (result = "its a tie");
         }, 500);
       }
     }
+    
 
-    document.querySelector(".score").innerHTML = score;
-    console.log(score);
+    function scoreKeeper() {
+
+      localStorage.setItem('score', score)
+      const SCO = localStorage.getItem('score')
+      document.querySelector('.score').innerHTML = SCO
+    }
+
+    scoreKeeper()
   }
+
+
+
+
   setTimeout(() => {
     game__play();
   }, 100);
