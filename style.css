@@ -15,6 +15,7 @@ body{
     align-items: center;
     flex-direction: column;
     height: 97vh;
+    overflow: hidden;
 }
 
 /*
@@ -105,6 +106,7 @@ GAME BOARD
    justify-content: center;
    align-items: center;
    height: 100vh;
+
 }
 #tri__img{
     display: flex;
@@ -206,8 +208,21 @@ RULES__BTN
     border-radius: 8px;
     background-color: #252243;
     font-size: 20px;
-    position: relative;
-    bottom: 35px;
+    position: absolute;
+   bottom: 75px;
+   right: 10%;
+   transition: all 100ms ease ;
+}
+.rules__btn:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.rules__btn:active{
+    background-color: #fff;
+    color: #252243;
+    border-color: #fff;
+    transition: all 100ms ease ;
+    scale: 0.95;
 }
 
 li{
@@ -497,4 +512,89 @@ ul{
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@media (max-width: 425px) {
+    /* #RPS__GAME{
+        height: 97vh;
+        overflow: hidden;
+    } */
+    /* .game__board {
+        height: 90vh;
+        overflow: hidden;
+    } */
+    .name__board{
+        width: 95%;
+    }
+    .name__board--descrip{
+        font-size: 13px;
+    }
+    .name__board--score{
+        max-width: 100px;
+        height: 10vh;
+    }
+    .score__descrip{
+       
+    }
+    .score,
+    .score__descrip{
+        position: relative;
+        bottom: -8px;
+    }
+    #paper,
+    #rock,
+    #scissors{
+        width: 150px;
+        height: 150px;
+    }
+    #tri__img{
+        width: 220px;
+    }
+    .first__tiles{
+        position: relative;
+        top: 55px;
+        max-width: 350px;
+    }
+    .games__tile--3{
+        position: relative;
+        bottom: 100px;
+    }
+    .rules__btn{
+        position: relative;
+        left: 0px;
+        bottom: 30px;
+
+    }
+    #playing{
+        overflow: hidden;
+        height: 97vh;
+    }
+    #rock1,
+    #paper1{
+        width: 150px;
+        height: 150px;
+    }
+    .player__text,
+    .house__text{
+        font-size: 16px;
+        padding: 0px ;
+    }
+    .game__play--para{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 290px;
+    }
+    .win_or_lose{
+        position: relative;
+         top: 230px;
+    }
+    .play__again__btn{
+        position: absolute;
+        top: 525px;
+    }
+}
+
+@media (max-width: 768px) {
+    
 }
